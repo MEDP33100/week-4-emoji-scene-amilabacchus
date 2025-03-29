@@ -1,0 +1,54 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #080429;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.earth {
+    font-size: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.star {
+    position: absolute;
+    color: white;
+    z-index: 1;
+}
+
+
+.satellite {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    font-size: 4rem;
+    z-index: 2;
+}
+
+/*adjust size*/
+@media (max-width: 600px) {
+    .earth {
+        font-size: 20vw;
+    }
+
+    .star {
+        font-size: 3vw;
+    }
+
+    .satellite {
+        font-size: 4vw;
+    }
+}
